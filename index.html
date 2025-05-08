@@ -1,0 +1,114 @@
+<!-- Final index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amrit Life Insurance</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="amrit_logo.png" alt="Amrit Logo" class="logo">
+    <h1>AMRIT LIFE INSURANCE जीवन भर का साथ</h1>
+  </header>
+
+  <section class="know-more">
+    <h2>Know More about Insurance Plans</h2>
+    <div class="plans">
+      <div class="plan-box" onclick="location.href='term_insurance.html'">
+        <h3>Term Insurance</h3>
+        <p>Provides financial protection for a fixed term. Affordable premium, high coverage</p>
+      </div>
+      <div class="plan-box" onclick="location.href='whole_life.html'">
+        <h3>Whole Life</h3>
+        <p>Covers you for your entire life. Offers both insurance and wealth creation benefits</p>
+      </div>
+      <div class="plan-box" onclick="location.href='retirement_plans.html'">
+        <h3>Retirement Plans</h3>
+        <p>Monthly pension plans that support your financial independence after retirement</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="flagship">
+    <h2>Our Flagship Products</h2>
+    <div class="products">
+      <div class="product" style="background-image: url('umbrella.jpg')">
+        <h3>Amrit Suraksha</h3>
+        <p>Low-cost term life cover up to ₹1 Cr</p>
+        <button onclick="toggleDetails('product1')">Learn More</button>
+        <div id="product1" class="details">
+          <ul>
+            <li>Up to ₹1 Cr term life cover</li>
+            <li>Affordable premiums</li>
+            <li>Flexible tenure and payment options</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product" style="background-image: url('savings.jpg')">
+        <h3>Amrit Nivesh</h3>
+        <p>Combine savings with insurance protection</p>
+        <button onclick="toggleDetails('product2')">Learn More</button>
+        <div id="product2" class="details">
+          <ul>
+            <li>Dual benefit of protection + savings</li>
+            <li>Tax savings under Section 80C</li>
+            <li>Flexible investment tenure</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product" style="background-image: url('child.jpg')">
+        <h3>Amrit Bal Suraksha</h3>
+        <p>Secure your child’s future education</p>
+        <button onclick="toggleDetails('product3')">Learn More</button>
+        <div id="product3" class="details">
+          <ul>
+            <li>Funds your child's education</li>
+            <li>Premium waiver in case of death</li>
+            <li>Guaranteed return</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product" style="background-image: url('old.jpg')">
+        <h3>Amrit Varishtha</h3>
+        <p>Guaranteed monthly pension post-retirement</p>
+        <button onclick="toggleDetails('product4')">Learn More</button>
+        <div id="product4" class="details">
+          <ul>
+            <li>Regular monthly income after retirement</li>
+            <li>Flexible premium payment options</li>
+            <li>Protection against inflation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="more-products">
+    <p class="tiny-text"><a href="detailed_products.html">to know more about our products in detail, click here</a></p>
+  </section>
+
+  <section class="sip-calculator">
+    <h2>Try our SIP Calculator, for FREE!!</h2>
+    <form id="sipForm">
+      <label for="amount">Monthly Investment (₹):</label>
+      <input type="number" id="amount" required>
+
+      <label for="rate">Expected Annual Return (%):</label>
+      <input type="number" id="rate" required>
+
+      <label for="years">Investment Period (Years):</label>
+      <input type="number" id="years" required>
+
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="result"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Amrit Life Insurance. All rights reserved.</p>
+  </footer>
+</body>
+</html>

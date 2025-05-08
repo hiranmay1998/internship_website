@@ -1,0 +1,177 @@
+body { 
+  font-family: Arial, sans-serif; 
+  background: #fff7f0; 
+  margin: 0; 
+  padding: 0; 
+}
+
+header { 
+  background: #ff8a65; 
+  padding: 10px; 
+  display: flex; 
+  align-items: center; 
+}
+
+header img.logo { 
+  width: 150px; /* Increased size */
+  margin-right: 15px; 
+}
+
+header h1 { 
+  color: white; 
+  font-size: 36px; /* Increased font size */
+  font-family: 'Georgia', serif; /* Classic font style */
+  text-align: center;
+}
+
+.know-more, .flagship, .more-products, .sip-calculator { 
+  padding: 20px; 
+}
+
+.know-more h2, .flagship h2, .sip-calculator h2 { 
+  color: #e65100; 
+}
+
+.plans, .products { 
+  display: flex; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+.plan-box, .product { 
+  flex: 1; 
+  background: #ffe0b2; 
+  padding: 20px; 
+  border-radius: 10px; 
+  text-align: center; 
+  cursor: pointer; 
+  transition: 0.3s; 
+}
+
+.plan-box:hover { 
+  background: #ffcc80; 
+}
+
+.product { 
+  background-size: cover; 
+  color: white; 
+  position: relative; 
+}
+
+button { 
+  margin-top: 10px; 
+  background: #ff7043; 
+  color: white; 
+  border: none; 
+  padding: 10px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+button:hover { 
+  background: #e64a19; 
+}
+
+.details { 
+  background: rgba(255, 255, 255, 0.8); 
+  color: #333; 
+  padding: 10px; 
+  border-radius: 5px; 
+  margin-top: 10px; 
+  display: none; 
+}
+
+.tiny-text { 
+  font-size: 12px; 
+  text-align: center; 
+  color: blue; 
+}
+
+form { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+  max-width: 400px; 
+  margin: auto; 
+}
+
+input { 
+  padding: 8px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+}
+
+#result { 
+  margin-top: 20px; 
+  text-align: center; 
+  font-size: 18px; 
+  font-weight: bold; 
+}
+
+footer { 
+  background: #ff8a65; 
+  color: white; 
+  text-align: center; 
+  padding: 15px; 
+  margin-top: 20px; 
+  font-size: 14px; 
+}
+
+a { 
+  color: white; 
+  background: #ff7043; 
+  padding: 8px 12px; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  transition: background 0.3s; 
+}
+
+a:hover { 
+  background: #e64a19; 
+}
+
+@media (max-width: 768px) {
+  .plans, .products { 
+    flex-direction: column; 
+  }
+
+  .plan-box, .product { 
+    flex: unset; 
+    width: 100%; 
+  }
+
+  header { 
+    flex-direction: column; 
+    text-align: center; 
+  }
+
+  header img.logo { 
+    margin: 0 auto 10px; 
+  }
+}
+
+/* New CSS for Flagship Products Text */
+.product h3, .product p {
+  color: white;
+  text-shadow: 2px 2px 4px black; /* Adds black outline effect */
+}
+
+.product:nth-child(1) h3, .product:nth-child(1) p {
+  color: white;
+  text-shadow: 2px 2px 4px black; /* Amrit Suraksha */
+}
+
+.product:nth-child(2) h3, .product:nth-child(2) p {
+  color: white;
+  text-shadow: 2px 2px 4px black; /* Amrit Nivesh */
+}
+
+.product:nth-child(3) h3, .product:nth-child(3) p {
+  color: white;
+  text-shadow: 2px 2px 4px black; /* Amrit Bal Suraksha */
+}
+
+.product:nth-child(4) h3, .product:nth-child(4) p {
+  color: white;
+  text-shadow: 2px 2px 4px black; /* Amrit Varishtha */
+}
